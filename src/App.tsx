@@ -25,28 +25,6 @@ class App extends Component {
  
   render(){
     const {hospitais} = this.state;
-    console.log("asdf - ",hospitais);
-
-    const arrHospitais = hospitais.map((element:any) => ([
-      {
-        estado: element.estado,
-        estadoSigla: element.estadoSigla,
-        municipio: element.municipio,
-        nomeCnes: element.nomeCnes,
-        obitos: 0,
-        ocupHospCli: 0,
-        ocupHospUti: 0,
-        ocupSRAGCli: 0,
-        ocupSRAGUti: 0,
-        ocupacaoInformada: false,
-        ofertaHospCli: 0,
-        ofertaHospUti: 0,
-        ofertaRespiradores: 0,
-        ofertaSRAGCli: 0,
-        ofertaSRAGUti: 0
-      }
-    ]))
-    
     
     return(  
       <>
@@ -76,11 +54,7 @@ class App extends Component {
           </div>
           
           <div className="row px-3 py-3">
-            <DataTable  nomeHospital={hospitais.map((item:any) => (
-              <div key={item._id}>
-                {item._source.map()}
-              </div>
-            ))}/>
+            <DataTable  hospital={hospitais} />
           </div>
 
           <div className="row px-3">

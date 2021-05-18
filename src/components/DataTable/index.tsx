@@ -1,8 +1,8 @@
-import { isPropertySignature } from "typescript";
-
-function DataTable (props: any) {
+const  DataTable = ({hospital} :any) => {
    
-    const { nomeHospital }=  props;
+    const obj = hospital.map( (h:any) => h._source);
+    console.log(obj);
+
     return (
         
         <div className="table-responsive">
@@ -17,10 +17,10 @@ function DataTable (props: any) {
             </thead>
             <tbody>
                 
-                {nomeHospital.map((element:any, index:number) => ( 
+                {obj.map((hosp:any, index:number) => ( 
                     
                     <tr key={index}>
-                        <td className="text-left  px-4">{element}</td>
+                        <td className="text-left  px-4">{hosp.nomeCnes || 'Hospital não informado' }</td>
                         <td className="text-left  px-4">200</td>
                         <td className="text-left  px-4">150</td>
                         <td className="text-left  px-4">75%</td>
