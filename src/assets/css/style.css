@@ -32,7 +32,10 @@ html, body {
     color: var(--color-primary) !important;
 }
 
-.css-table{
-    border-radius: 20px !important;
+#css-table{
+    border-radius: 10px !important;
     background-color: #ffffff;
+}
+#erro {
+    color: rgb(155, 9, 9);
 }
