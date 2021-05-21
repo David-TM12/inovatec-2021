@@ -157,9 +157,9 @@ class App extends Component {
     return(  
       <>
         <NavBar />
-        <div className="px-5">
+        <div className="container">
           <h1 className="text-primary py-3">Ocupação dos leitos em manaus</h1>
-          <h2 className="alert-info py-3">Principais hospitais de manaus</h2>
+          <h2 className="alert alert-info py-3">Principais hospitais de manaus</h2>
           <div className="row px-3 py-3">
             {/* card1 */}
             <div className="col-sm-4">
@@ -241,7 +241,7 @@ class App extends Component {
           </div>
 
           
-          <h2 className="alert-info py-3">Hospitais de Manaus</h2>
+          <h2 className="alert alert-info py-3">Hospitais de Manaus</h2>
           <div className="row px-3 py-3">
             <DataTable  hospital={hospitais} />
           </div>
