@@ -1,6 +1,7 @@
 import Chart from "react-apexcharts";
 
-const BarChart  = () =>{
+const BarChart  = (props:any) =>{
+    
 
     const options = {
         plotOptions: {
@@ -10,13 +11,30 @@ const BarChart  = () =>{
         },
     };
     
+
+
+
+    //objetos do hospitais
+    const h1 = {
+        nome: props.hospital1.nomeCnes,
+    }
+
+    const h2 = {
+        nome: props.hospital2.nomeCnes,
+    }
+    const h3 = {
+        nome: props.hospital3.nomeCnes,
+    }
+    const h4 = {
+        nome: props.hospital4.nomeCnes,
+    }
     const mockData = {
         labels: {
-            categories: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
+            categories: [h1.nome, h2.nome, h3.nome, h4.nome]
         },
         series: [
             {
-                name: "% Sucesso",
+                name: "% Ocupação",
                 data: [43.6, 67.1, 67.7, 45.6, 71.1]                   
             }
         ]

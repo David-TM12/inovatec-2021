@@ -94,6 +94,40 @@ class App extends Component {
       altas: undefined,
       dataNotificacaoOcupacao: undefined,
     }
+
+    const card5 = {
+      nomeCnes: undefined,
+      obitos: undefined,
+      ocupHospCli: undefined,
+      ocupHospUti: undefined,
+      ocupSRAGCli: undefined,
+      ocupSRAGUti: undefined,
+      // ocupacaoInformada: undefined,
+      ofertaHospCli: undefined,
+      ofertaHospUti: undefined,
+      ofertaRespiradores: undefined,
+      ofertaSRAGCli: undefined,
+      ofertaSRAGUti: undefined,
+      altas: undefined,
+      dataNotificacaoOcupacao: undefined,
+    }
+
+    const card6 = {
+      nomeCnes: undefined,
+      obitos: undefined,
+      ocupHospCli: undefined,
+      ocupHospUti: undefined,
+      ocupSRAGCli: undefined,
+      ocupSRAGUti: undefined,
+      // ocupacaoInformada: undefined,
+      ofertaHospCli: undefined,
+      ofertaHospUti: undefined,
+      ofertaRespiradores: undefined,
+      ofertaSRAGCli: undefined,
+      ofertaSRAGUti: undefined,
+      altas: undefined,
+      dataNotificacaoOcupacao: undefined,
+    }
     
     //preenchendo o objeto card1
     obj.map((item:any) => {
@@ -152,6 +186,66 @@ class App extends Component {
         card3.ofertaSRAGUti = item.ofertaSRAGUti || 0;
         card3.altas = item.altas || 0;
         card3.dataNotificacaoOcupacao = item.dataNotificacaoOcupacao || 0;
+      }
+    });
+
+    //preenchendo o objeto card4
+    obj.map((item:any) => {
+      if(item.cnes === "5169976"){
+        card4.nomeCnes = item.nomeCnes || "";
+        card4.obitos = item.obitos || 0;
+        card4.ocupHospCli = item.ocupHospCli || 0;
+        card4.ocupHospUti = item.ocupHospUti || 0;
+        card4.ocupSRAGCli = item.ocupSRAGCli || 0;
+        card4.ocupSRAGUti = item.ocupSRAGUti || 0;
+        // card4.ocupacaoInformada = item.ocupacaoInformada || 0;
+        card4.ofertaHospCli = item.ofertaHospCli || 0;
+        card4.ofertaHospUti = item.ofertaHospUti || 0;
+        card4.ofertaRespiradores = item.ofertaRespiradores || 0;
+        card4.ofertaSRAGCli = item.ofertaSRAGCli || 0;
+        card4.ofertaSRAGUti = item.ofertaSRAGUti || 0;
+        card4.altas = item.altas || 0;
+        card4.dataNotificacaoOcupacao = item.dataNotificacaoOcupacao || 0;
+      }
+    });
+
+    //preenchendo o objeto card5
+    obj.map((item:any) => {
+      if(item.cnes === "5169976"){
+        card5.nomeCnes = item.nomeCnes || "";
+        card5.obitos = item.obitos || 0;
+        card5.ocupHospCli = item.ocupHospCli || 0;
+        card5.ocupHospUti = item.ocupHospUti || 0;
+        card5.ocupSRAGCli = item.ocupSRAGCli || 0;
+        card5.ocupSRAGUti = item.ocupSRAGUti || 0;
+        // card5.ocupacaoInformada = item.ocupacaoInformada || 0;
+        card5.ofertaHospCli = item.ofertaHospCli || 0;
+        card5.ofertaHospUti = item.ofertaHospUti || 0;
+        card5.ofertaRespiradores = item.ofertaRespiradores || 0;
+        card5.ofertaSRAGCli = item.ofertaSRAGCli || 0;
+        card5.ofertaSRAGUti = item.ofertaSRAGUti || 0;
+        card5.altas = item.altas || 0;
+        card5.dataNotificacaoOcupacao = item.dataNotificacaoOcupacao || 0;
+      }
+    });
+
+    //preenchendo o objeto card6
+    obj.map((item:any) => {
+      if(item.cnes === "5169976"){
+        card6.nomeCnes = item.nomeCnes || "";
+        card6.obitos = item.obitos || 0;
+        card6.ocupHospCli = item.ocupHospCli || 0;
+        card6.ocupHospUti = item.ocupHospUti || 0;
+        card6.ocupSRAGCli = item.ocupSRAGCli || 0;
+        card6.ocupSRAGUti = item.ocupSRAGUti || 0;
+        // card6.ocupacaoInformada = item.ocupacaoInformada || 0;
+        card6.ofertaHospCli = item.ofertaHospCli || 0;
+        card6.ofertaHospUti = item.ofertaHospUti || 0;
+        card6.ofertaRespiradores = item.ofertaRespiradores || 0;
+        card6.ofertaSRAGCli = item.ofertaSRAGCli || 0;
+        card6.ofertaSRAGUti = item.ofertaSRAGUti || 0;
+        card6.altas = item.altas || 0;
+        card6.dataNotificacaoOcupacao = item.dataNotificacaoOcupacao || 0;
       }
     });
     
@@ -222,38 +316,81 @@ class App extends Component {
                 dataNotificacaoOcupacao={card3.dataNotificacaoOcupacao}
               />
             </div>
-             {/* card3 */}
+             {/* card4 */}
              <div className="col-sm-4">
               <Cards
-                nomeCnes={card3.nomeCnes}
-                obitos={ card3.obitos}
-                ocupHospCli={card3.ocupHospCli}
-                ocupHospUti={card3.ocupHospUti}
-                ocupSRAGCli={card3.ocupSRAGCli}
-                ocupSRAGUti={card3.ocupSRAGUti}
-                // ocupacaoInformada={card3.ocupacaoInformada}
-                ofertaHospCli={card3.ofertaHospCli}
-                ofertaHospUti={card3.ofertaHospUti}
-                ofertaRespiradores={card3.ofertaRespiradores}
-                ofertaSRAGCli={card3.ofertaSRAGCli}
-                ofertaSRAGUti={card3.ofertaSRAGUti}
-                altas={card3.altas}
-                dataNotificacaoOcupacao={card3.dataNotificacaoOcupacao}
+                nomeCnes={card4.nomeCnes}
+                obitos={ card4.obitos}
+                ocupHospCli={card4.ocupHospCli}
+                ocupHospUti={card4.ocupHospUti}
+                ocupSRAGCli={card4.ocupSRAGCli}
+                ocupSRAGUti={card4.ocupSRAGUti}
+                // ocupacaoInformada={card4.ocupacaoInformada}
+                ofertaHospCli={card4.ofertaHospCli}
+                ofertaHospUti={card4.ofertaHospUti}
+                ofertaRespiradores={card4.ofertaRespiradores}
+                ofertaSRAGCli={card4.ofertaSRAGCli}
+                ofertaSRAGUti={card4.ofertaSRAGUti}
+                altas={card4.altas}
+                dataNotificacaoOcupacao={card4.dataNotificacaoOcupacao}
+              />
+            </div>
+
+            {/* card5 */}
+            <div className="col-sm-4">
+              <Cards
+                nomeCnes={card5.nomeCnes}
+                obitos={ card5.obitos}
+                ocupHospCli={card5.ocupHospCli}
+                ocupHospUti={card5.ocupHospUti}
+                ocupSRAGCli={card5.ocupSRAGCli}
+                ocupSRAGUti={card5.ocupSRAGUti}
+                // ocupacaoInformada={card5.ocupacaoInformada}
+                ofertaHospCli={card5.ofertaHospCli}
+                ofertaHospUti={card5.ofertaHospUti}
+                ofertaRespiradores={card5.ofertaRespiradores}
+                ofertaSRAGCli={card5.ofertaSRAGCli}
+                ofertaSRAGUti={card5.ofertaSRAGUti}
+                altas={card5.altas}
+                dataNotificacaoOcupacao={card5.dataNotificacaoOcupacao}
+              />
+            </div>
+
+
+            {/* card6 */}
+            <div className="col-sm-4">
+              <Cards
+                nomeCnes={card6.nomeCnes}
+                obitos={ card6.obitos}
+                ocupHospCli={card6.ocupHospCli}
+                ocupHospUti={card6.ocupHospUti}
+                ocupSRAGCli={card6.ocupSRAGCli}
+                ocupSRAGUti={card6.ocupSRAGUti}
+                // ocupacaoInformada={card6.ocupacaoInformada}
+                ofertaHospCli={card6.ofertaHospCli}
+                ofertaHospUti={card6.ofertaHospUti}
+                ofertaRespiradores={card6.ofertaRespiradores}
+                ofertaSRAGCli={card6.ofertaSRAGCli}
+                ofertaSRAGUti={card6.ofertaSRAGUti}
+                altas={card6.altas}
+                dataNotificacaoOcupacao={card6.dataNotificacaoOcupacao}
               />
             </div>
           </div>
 
-          
-          <h2 className="alert alert-info py-3">Hospitais de Manaus</h2>
-          <div className="row px-3 py-3">
-            <DataTable  hospital={hospitais} />
-          </div>
-
+          <h2 className="alert alert-info py-3">Graficos de ocupação dos hospitais</h2>
           <div className="row px-3">
 
             <div className="col-sm-6">
-              <h5 className="text-center text-secondary">Hospitais</h5>
-              <BarChart />
+              <h5 className="text-center text-secondary">% Ocupação dos leitos</h5>
+              <BarChart 
+                hospital1={card1}
+                hospital2={card2}
+                hospital3={card3}
+                hospital4={card4}
+                hospital5={card5}
+                hospital6={card6}
+              />
             </div>
 
             <div className="col-sm-6">
@@ -261,6 +398,11 @@ class App extends Component {
               <DonutChart />
             </div>
 
+          </div>
+
+          <h2 className="alert alert-info py-3">Hospitais de Manaus</h2>
+          <div className="row px-3 py-3">
+            <DataTable  hospital={hospitais} />
           </div>
 
           <div className="row px-3">
