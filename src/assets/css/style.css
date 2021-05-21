@@ -28,6 +28,7 @@ html, body {
     background-color: var(--color-primary) !important;
 }
 
+
 .text-primary {
     color: var(--color-primary) !important;
 }
@@ -37,5 +38,32 @@ html, body {
     background-color: #ffffff;
 }
 #erro {
-    color: rgb(155, 9, 9);
+    color: rgba(20, 18, 18, 0.322);
+}
+
+img {
+    min-width: 30%;
+    height: 10%;
+}
+
+#card{
+    min-height: 475px;
+    background-color: #45a585 !important;
+}
+
+#titulo-card {
+    min-height: 73px;
+    color:#f3faf8;
+    font-weight: bolder;
+    font-size: larger;
+    background-color: #3f8d73 !important;
+    border-left: 10px solid rgb(98, 56, 109);
+    border-left-style: groove;
+}
+
+#text-card{
+    color:#f3faf8;
+    font-weight: bolder;
+    font-size: larger;
+
 }

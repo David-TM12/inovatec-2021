@@ -26,15 +26,15 @@ const  DataTable = ({hospital} :any) => {
                     {obj.map((hosp:any, index:number) => ( 
                         <tr key={index}>
                             <td className="text-left  px-4">{hosp.nomeCnes || <i id="erro">Hospital não informado</i> }</td>
-                            <td className="text-left  px-4">{hosp.ocupHospCli || <i id="erro">N/A</i>}</td>
-                            <td className="text-left  px-4">{hosp.ocupHospUti || <i id="erro">N/A</i>}</td>
-                            <td className="text-left  px-4">{hosp.ocupSRAGCli || <i id="erro">N/A</i>}</td>
-                            <td className="text-left  px-4">{hosp.ocupSRAGUti || <i id="erro">N/A</i>}</td>
-                            <td className="text-left  px-4">{hosp.ofertaHospCli || <i id="erro">N/A</i>}</td>
-                            <td className="text-left  px-4">{hosp.ofertaHospUti || <i id="erro">N/A</i>}</td>
-                            <td className="text-left  px-4">{hosp.ofertaSRAGCli || <i id="erro">N/A</i>}</td>
-                            <td className="text-left  px-4">{hosp.ofertaSRAGUti || <i id="erro">N/A</i>}</td>
-                            <td className="text-left  px-4">{hosp.ofertaRespiradores || <i id="erro"> - </i>}</td>
+                            <td className="text-left  px-4">{hosp.ocupHospCli || <i id="erro">n/a</i>}</td>
+                            <td className="text-left  px-4">{hosp.ocupHospUti || <i id="erro">n/a</i>}</td>
+                            <td className="text-left  px-4">{hosp.ocupSRAGCli || <i id="erro">n/a</i>}</td>
+                            <td className="text-left  px-4">{hosp.ocupSRAGUti || <i id="erro">n/a</i>}</td>
+                            <td className="text-left  px-4">{hosp.ofertaHospCli || <i id="erro">n/a</i>}</td>
+                            <td className="text-left  px-4">{hosp.ofertaHospUti || <i id="erro">n/a</i>}</td>
+                            <td className="text-left  px-4">{hosp.ofertaSRAGCli || <i id="erro">n/a</i>}</td>
+                            <td className="text-left  px-4">{hosp.ofertaSRAGUti || <i id="erro">n/a</i>}</td>
+                            <td className="text-left  px-4">{hosp.ofertaRespiradores || <i id="erro">n/a</i>}</td>
                         </tr>
                     ))}
                         
