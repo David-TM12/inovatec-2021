@@ -5,6 +5,7 @@ import DonutChart from "components/DonutChat";
 import Footer from "components/Footer";
 import Mapas from "components/Mapa";
 import NavBar from "components/NavBar/index";
+import Info from "components/Info/index";
 import { Component } from "react";
 import api from "./api";
 
@@ -157,8 +158,10 @@ class App extends Component {
     return(  
       <>
         <NavBar />
+        
         <div className="container">
           <h1 className="text-primary py-3">Ocupação dos leitos em manaus</h1>
+          <Info />
           <h2 className="alert alert-info py-3">Principais hospitais de manaus</h2>
           <div className="row px-3 py-3">
             {/* card1 */}

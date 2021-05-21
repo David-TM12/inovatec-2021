@@ -1,4 +1,4 @@
-const  DataTable = ({hospital} :any) => {
+const DataTable = ({hospital} :any) => {
    
     const obj = hospital.map( (h:any) => h._source);
     console.log(obj);
@@ -34,7 +34,7 @@ const  DataTable = ({hospital} :any) => {
                             {hosp.nomeCnes && <td className="text-left text-sm-center">{hosp.ofertaHospUti || <i id="erro"> - </i>}</td>}
                             {hosp.nomeCnes && <td className="text-left text-sm-center">{hosp.ofertaSRAGCli || <i id="erro"> - </i>}</td>}
                             {hosp.nomeCnes && <td className="text-left text-sm-center">{hosp.ofertaSRAGUti || <i id="erro"> - </i>}</td>}
-                            {hosp.nomeCnes && <td className="text-left text-sm-center">{hosp.ofertaRespiradores || <i id="erro">n/a</i>}</td>}
+                            {hosp.nomeCnes && <td className="text-left text-sm-center">{hosp.ofertaRespiradores || <i id="erro"> - </i>}</td>}
                         </tr>
                     ))}     
                 </tbody>

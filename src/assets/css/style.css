@@ -59,6 +59,8 @@ img {
     background-color: #3f8d73 !important;
     border-left: 10px solid rgb(98, 56, 109);
     border-left-style: groove;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 6px;
 }
 
 #text-card{
