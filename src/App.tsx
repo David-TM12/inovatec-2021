@@ -12,19 +12,20 @@ import api from "./api";
 class App extends Component {
 
   state = {
-    hospitais: []
+    hospitais: [],
   }
 
   async componentDidMount(){
      await api.getBuscar('manaus').then(res => {
-      // console.log(res.data);
+      console.log("asdfasdf -- ",res.data);
       this.setState({hospitais: res.data.hits.hits});
     });
   }
 
  
   render(){
-    const {hospitais} = this.state;
+    const { hospitais } = this.state;
+
     const obj = hospitais.map((h: any) => h._source);
 
     const card1 = {
@@ -211,7 +212,7 @@ class App extends Component {
 
     //preenchendo o objeto card5
     obj.map((item:any) => {
-      if(item.cnes === "5169976"){
+      if(item.cnes === "2012685"){
         card5.nomeCnes = item.nomeCnes || "";
         card5.obitos = item.obitos || 0;
         card5.ocupHospCli = item.ocupHospCli || 0;
@@ -231,7 +232,7 @@ class App extends Component {
 
     //preenchendo o objeto card6
     obj.map((item:any) => {
-      if(item.cnes === "5169976"){
+      if(item.cnes === "2017644"){
         card6.nomeCnes = item.nomeCnes || "";
         card6.obitos = item.obitos || 0;
         card6.ocupHospCli = item.ocupHospCli || 0;
@@ -254,9 +255,8 @@ class App extends Component {
         <NavBar />
         
         <div className="container">
-          <h1 className="text-primary py-3">Ocupação dos leitos em manaus</h1>
-          <Info />
-          <h2 className="alert alert-info py-3">Principais hospitais de manaus</h2>
+          <h1 className="text-primary py-3">Ocupação dos leitos em Manaus</h1>
+          <h2 className="alert alert-info py-3">Principais hospitais de Manaus</h2>
           <div className="row px-3 py-3">
             {/* card1 */}
             <div className="col-sm-4">
@@ -378,7 +378,7 @@ class App extends Component {
             </div>
           </div>
 
-          <h2 className="alert alert-info py-3">Graficos de ocupação dos hospitais</h2>
+          <h2 className="alert alert-info py-3">Graficos dos hospitais</h2>
           <div className="row px-3">
 
             <div className="col-sm-6">
@@ -394,8 +394,15 @@ class App extends Component {
             </div>
 
             <div className="col-sm-6">
-              <h5 className="text-center text-secondary">Hospitais</h5>
-              <DonutChart />
+              <h5 className="text-center text-secondary">Número de respiradores por hospital</h5>
+              <DonutChart 
+                hospital1={card1}
+                hospital2={card2}
+                hospital3={card3}
+                hospital4={card4}
+                hospital5={card5}
+                hospital6={card6}
+              />
             </div>
 
           </div>
@@ -405,7 +412,22 @@ class App extends Component {
             <DataTable  hospital={hospitais} />
           </div>
 
-          <div className="row px-3">
+          <h2 className="alert alert-info py-3">Informações da equipe</h2>
+          <div className="py-3">
+            <Info />
+          </div>
+
+
+          <div className="row px-4 py-2 card-warning">
+            <div className="card">
+              <small className="text-center text-secondary">Dados coletados via API do sitema OpenDataSus. 
+                Não nos resposabilizamos pelos dados apresentando nesta página, qualquer incongruência nos dados 
+                deverá ser verificado junto ao  <a target="_blank" href="https://opendatasus.saude.gov.br/dataset/registro-de-ocupacao-hospitalar"><i><b>OpenDataSUS</b></i></a>  que é o Banco de Dados onde as informação são coletadas. Sendo assim o propósito da página é apenas apresentar os dados 
+                dos principais hospitais de Manaus.</small>
+            </div>
+             
+          </div>
+          {/* <div className="row px-3">
 
             <div className="col-sm-6">
               <h5 className="text-center text-secondary">Hospitais</h5>
@@ -421,7 +443,7 @@ class App extends Component {
 
           <div className="py-3">
             <h2 className="text-primary">Todos hopitais de manaus</h2>
-          </div>
+          </div> */}
 
           
         </div>

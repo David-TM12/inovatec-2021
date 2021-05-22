@@ -1,4 +1,4 @@
-
+import moment from "moment";
 
 const Cards = (props: any) => {
 
@@ -6,31 +6,31 @@ const Cards = (props: any) => {
         <div className="card text-dark bg-info card-sm mb-3" id="card">
             <div className="card-header text-center" id="titulo-card"><b>{props.nomeCnes}</b></div>
             <div className="card-body">
-                <p className="card-title" id="text-card"><b>obitos: </b>{props.obitos}</p>
+                <p className="card-title" id="text-card"><b>OCUPAÇÃO CLÍNICA: </b>{props.ocupHospCli || <i id="erro">n/a</i>}</p>
 
-                <p className="card-title" id="text-card"><b>ocupHospCli: </b>{props.ocupHospCli || <i id="erro">n/a</i>}</p>
+                <p className="card-title" id="text-card"><b>OCUPAÇÃO UTI: </b>{props.ocupHospUti || <i id="erro">n/a</i>}</p>
 
-                <p className="card-title" id="text-card"><b>ocupHospUti: </b>{props.ocupHospUti || <i id="erro">n/a</i>}</p>
+                <p className="card-title" id="text-card"><b>OCUPAÇÃO SRAG CLÍNICA: </b>{props.ocupSRAGCli || <i id="erro">n/a</i>}</p>
 
-                <p className="card-title" id="text-card"><b>ocupSRAGCli: </b>{props.ocupSRAGCli || <i id="erro">n/a</i>}</p>
-
-                <p className="card-title" id="text-card"><b>ocupSRAGUti: </b>{props.ocupSRAGUti || <i id="erro">n/a</i>}</p>
+                <p className="card-title" id="text-card"><b>OCUPAÇÃO SRAG UTI: </b>{props.ocupSRAGUti || <i id="erro">n/a</i>}</p>
 
                 {/* <p className="card-title"><b>ocupacaoInformada: </b>{props.ocupacaoInformada || <i id="erro">n/a</i>}</p> */}
 
-                <p className="card-title" id="text-card"><b>ofertaHospCli: </b>{props.ofertaHospCli || <i id="erro">n/a</i>}</p>
+                <p className="card-title" id="text-card"><b>OFERTA CLÍNICA: </b>{props.ofertaHospCli || <i id="erro">n/a</i>}</p>
 
-                <p className="card-title" id="text-card"><b>ofertaHospUti: </b>{props.ofertaHospUti || <i id="erro">n/a</i>}</p>
+                <p className="card-title" id="text-card"><b>OFERTA UTI: </b>{props.ofertaHospUti || <i id="erro">n/a</i>}</p>
 
-                <p className="card-title" id="text-card"><b>ofertaRespiradores: </b>{props.ofertaRespiradores || <i id="erro">n/a</i>}</p>
+                <p className="card-title" id="text-card"><b>RESPIRADORES: </b>{props.ofertaRespiradores || <i id="erro">n/a</i>}</p>
 
-                <p className="card-title" id="text-card"><b>ofertaSRAGCli: </b>{props.ofertaSRAGCli || <i id="erro">n/a</i>}</p>
+                <p className="card-title" id="text-card"><b>OFERTA SRAG CLÍNICA: </b>{props.ofertaSRAGCli || <i id="erro">n/a</i>}</p>
 
-                <p className="card-title" id="text-card"><b>ofertaSRAGUti: </b>{props.ofertaSRAGUti || <i id="erro">n/a</i>}</p>
+                <p className="card-title" id="text-card"><b>OFERTA SRAG UTI: </b>{props.ofertaSRAGUti || <i id="erro">n/a</i>}</p>
 
-                <p className="card-title" id="text-card"><b>altas: </b>{props.altas || <i id="erro">n/a</i>}</p>
+                <p className="card-title" id="text-card"><b>ALTAS: </b>{props.altas || <i id="erro">n/a</i>}</p>
 
-                <small className="card-title" id="text-card"><b>dataNotificacaoOcupacao: </b>{props.dataNotificacaoOcupacao || <i id="erro">n/a</i>}</small>
+                <p className="card-title" id="text-card"><b>OBITOS: </b>{props.obitos}</p>
+
+                <small className="card-title" id="text-card"><b>NOTIFICAÇÃO: </b>{moment(props.dataNotificacaoOcupacao).format("DD/MM/YYYY hh:ss") || <i id="erro">n/a</i>}</small>
             </div>
         </div>
     );

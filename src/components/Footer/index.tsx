@@ -5,9 +5,8 @@ function Footer(){
        
     <footer className="footer mt-auto py-3 bg-dark">
         <div className="container">
-            <p className="text-light">App desenvolvido por <a href="https://github.com/David-TM12" target="_blank" rel="noreferrer">DavidTM</a></p>
-            <p className="text-light"><small><strong>Semana Spring React</strong><br/>
-            Evento promovido pela escola DevSuperior: <a href="https://instagram.com/devsuperior.ig" target="_blank" rel="noreferrer">@devsuperior.ig</a></small></p>
+            <p className="text-light">App desenvolvido por <a href="https://github.com/David-TM12/inovatec-2021" target="_blank" rel="noreferrer">Equipe 3</a></p>
+            <p className="text-light"><small><strong>INOVATEC-2021</strong><br/> Leitos de manaus - projeto desenvolvido pelos alunos da famentro do curso de sistemas de informação para o INOVATEC-2021</small></p>
         </div>
     </footer>
     

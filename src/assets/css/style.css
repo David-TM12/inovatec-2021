@@ -69,3 +69,7 @@ img {
     font-size: larger;
 
 }
+
+.card-foto {
+    min-height: 286px;
+}

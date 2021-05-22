@@ -1,38 +1,202 @@
+import { useState } from "react";
+import { Accordion, Button, Card, Modal } from "react-bootstrap";
+import imgPadrao from "assets/img/alunos/Padrao1.png";
+import imgFabricio from "assets/img/alunos/FabricioTavares.jpeg";
+import imgRafael from "assets/img/alunos/RafaelSouza.jpeg";
+import imgDavid from "assets/img/alunos/DavidMagalhaes.jpeg";
 
 const Info = () => {
-    return (
-        <div className="alert alert-success" role="alert">
-            <h4 className="alert-heading">Seja bem vindo ao Leitos de manaus</h4>
-            <p>Projeto criado para o INOVATEC que é um evento criado pela faculdade Fametro de manaus, que tem como objetivo incentivar os seus alunos a criarem seus projetos para apresentar e já adquirir experiência no mercado, estando assim apto para ser inserido no mercado de trabalho.</p>
-            {<hr></hr>}
-            <div className="mb-0">
+  const [show, setShow] = useState(false);
 
-            {/* <!-- Button trigger modal --> */}
-            <button type="button" className="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Time de desenvolvimento
-            </button>
+  return (
+    <>
+    {/* Alunos */}
+      <Accordion defaultActiveKey="0">
+        <Card>
+          <Card.Header>
+            <Accordion.Toggle as={Button} variant="outline-success" eventKey="0">
+              Equipe
+            </Accordion.Toggle>
+          </Card.Header>
+          <Accordion.Collapse eventKey="0">
+            <Card.Body>
+              <div className="row py-2 card-info">
+                <div className="col-3">
+                  <Card style={{ width: "18rem" }}>
+                    <Card.Img variant="top" src={imgRafael || imgPadrao} className="p-2 card-foto"/>
+                    <Card.Body>
+                      <Card.Title>RAFAEL PEREIRA DE SOUZA</Card.Title>
+                      <Card.Text>
+                        Curso: sistemas de informação Turno: noturno
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+                <div className="col-3">
+                  <Card style={{ width: "18rem" }}>
+                    <Card.Img variant="top" src={imgDavid || imgPadrao} className="p-2 card-foto"/>
+                    <Card.Body>
+                      <Card.Title>DAVID TEIXEIRA MAGALHÃES</Card.Title>
+                      <Card.Text>
+                        Curso: sistemas de informação Turno: noturno
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+                <div className="col-3">
+                  <Card style={{ width: "18rem" }}>
+                    <Card.Img variant="top" src={imgFabricio || imgPadrao} className="p-2 card-foto"/>
+                    <Card.Body>
+                      <Card.Title>FABRICIO DOS SANTOS TAVARES</Card.Title>
+                      <Card.Text>
+                        Curso: sistemas de informação Turno: noturno
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
 
-            {/* <!-- Modal --> */}
-            <div className="modal fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div className="modal-dialog">
-                <div className="modal-content">
-                <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div className="col-3">
+                  <Card style={{ width: "18rem" }}>
+                    <Card.Img variant="top" src={imgPadrao} className="p-2 card-foto"/>
+                    <Card.Body>
+                      <Card.Title>STEFANY LOHANY AVINTE SANTIAGO</Card.Title>
+                      <Card.Text>
+                        Curso: sistemas de informação Turno: noturno
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
                 </div>
-                <div className="modal-body">
-                    ...
+              </div>
+
+              <div className="row py-2">
+                <div className="col-3">
+                  <Card style={{ width: "18rem" }}>
+                    <Card.Img variant="top" src={imgPadrao} className="p-2 card-foto"/>
+                    <Card.Body>
+                      <Card.Title>TELIANA DOS SANTOS DE SOUZA</Card.Title>
+                      <Card.Text>
+                        Curso: sistemas de informação Turno: noturno
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
                 </div>
-                <div className="modal-footer">
-                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" className="btn btn-primary">Save changes</button>
+
+                <div className="col-3">
+                  <Card style={{ width: "18rem" }}>
+                    <Card.Img variant="top" src={imgPadrao} className="p-2 card-foto"/>
+                    <Card.Body>
+                      <Card.Title>FERNANDO COSME DA SILVA NETO</Card.Title>
+                      <Card.Text>
+                        Curso: sistemas de informação Turno: noturno
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
                 </div>
+
+                <div className="col-3">
+                  <Card style={{ width: "18rem" }}>
+                    <Card.Img variant="top" src={imgPadrao} className="p-2 card-foto"/>
+                    <Card.Body>
+                      <Card.Title>JESSÉ DOS SANTOS FREITAS</Card.Title>
+                      <Card.Text>
+                        Curso: sistemas de informação Turno: noturno
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+
+                <div className="col-3">
+                  <Card style={{ width: "18rem" }}>
+                    <Card.Img variant="top" src={imgPadrao} className="p-2 card-foto"/>
+                    <Card.Body>
+                      <Card.Title>JOÃO FERREIRA RAMOS FILHO</Card.Title>
+                      <Card.Text>
+                        Curso: sistemas de informação Turno: noturno
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+              </div>
+
+              <div className="row py-2">
+                <div className="col-4">
+                  <Card style={{ width: "18rem" }}>
+                    <Card.Img variant="top" src={imgPadrao} className="p-2 card-foto"/>
+                    <Card.Body>
+                      <Card.Title>OSCAR BARBOSA DE OLIVEIRA</Card.Title>
+                      <Card.Text>
+                        Curso: sistemas de informação Turno: noturno
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+                <div className="col-4">
+                  <Card style={{ width: "18rem" }}>
+                    <Card.Img variant="top" src={imgPadrao} className="p-2 card-foto"/>
+                    <Card.Body>
+                      <Card.Title>DENNER LUCAS DA SILVA PANTOJA</Card.Title>
+                      <Card.Text>
+                        Curso: sistemas de informação Turno: noturno
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+                <div className="col-4">
+                  <Card style={{ width: "18rem" }}>
+                    <Card.Img variant="top" src={imgPadrao} className="p-2 card-foto"/>
+                    <Card.Body>
+                      <Card.Title>SAMUEL GOMES MENINO</Card.Title>
+                      <Card.Text>
+                        Curso: sistemas de informação Turno: noturno
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+              </div>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+
+        {/* //Coordenadores */}
+        <Card>
+            <Card.Header>
+            <Accordion.Toggle as={Button} variant="outline-success" eventKey="1">
+                Coordenadores
+            </Accordion.Toggle>
+            </Card.Header>
+            <Accordion.Collapse eventKey="1">
+            <Card.Body>
+            <div className="row py-2 card-info">
+                <div className="col-3">
+                  <Card style={{ width: "18rem" }}>
+                    <Card.Img variant="top" src={imgPadrao} className="p-2 card-foto"/>
+                    <Card.Body>
+                      <Card.Title>Angela Timotea</Card.Title>
+                      <Card.Text>
+                        Professora: Arquitetura
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+                <div className="col-3">
+                  <Card style={{ width: "18rem" }}>
+                    <Card.Img variant="top" src={imgPadrao} className="p-2 card-foto"/>
+                    <Card.Body>
+                      <Card.Title>Jaqueline Pinheiro</Card.Title>
+                      <Card.Text>
+                        Professora: Estrutura de dados I
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
                 </div>
             </div>
-            </div>
-            </div>
-        </div>
-    );
-}
+            </Card.Body>
+            </Accordion.Collapse>
+        </Card>
+      </Accordion>
+ 
+    </>
+  );
+};
 
 export default Info;
