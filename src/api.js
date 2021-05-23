@@ -3,7 +3,7 @@ import axios from "axios";
 class api {
   constructor() {
     const api = axios.create({
-      baseURL: "https://elastic-leitos.saude.gov.br/",
+      baseURL: "https://elastic-leitos.saude.gov.br/"
     });
     
     this.api = api;

@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Accordion, Button, Card, Modal } from "react-bootstrap";
-import imgPadrao from "assets/img/alunos/Padrao1.png";
+import imgPadrao from "assets/img/alunos/Padrao.png";
 import imgFabricio from "assets/img/alunos/FabricioTavares.jpeg";
 import imgRafael from "assets/img/alunos/RafaelSouza.jpeg";
-import imgDavid from "assets/img/alunos/DavidMagalhaes.jpeg";
+import imgDavid from "assets/img/alunos/DavidMagalhaes1.jpeg";
+import imgEstefany from "assets/img/alunos/Estefany1.jpeg";
 
 const Info = () => {
   const [show, setShow] = useState(false);
@@ -57,7 +58,7 @@ const Info = () => {
 
                 <div className="col-3">
                   <Card style={{ width: "18rem" }}>
-                    <Card.Img variant="top" src={imgPadrao} className="p-2 card-foto"/>
+                    <Card.Img variant="top" src={imgEstefany || imgPadrao} className="p-2 card-foto"/>
                     <Card.Body>
                       <Card.Title>STEFANY LOHANY AVINTE SANTIAGO</Card.Title>
                       <Card.Text>
@@ -119,7 +120,7 @@ const Info = () => {
               </div>
 
               <div className="row py-2">
-                <div className="col-4">
+                <div className="col-3">
                   <Card style={{ width: "18rem" }}>
                     <Card.Img variant="top" src={imgPadrao} className="p-2 card-foto"/>
                     <Card.Body>
@@ -130,7 +131,7 @@ const Info = () => {
                     </Card.Body>
                   </Card>
                 </div>
-                <div className="col-4">
+                <div className="col-3">
                   <Card style={{ width: "18rem" }}>
                     <Card.Img variant="top" src={imgPadrao} className="p-2 card-foto"/>
                     <Card.Body>
@@ -141,7 +142,7 @@ const Info = () => {
                     </Card.Body>
                   </Card>
                 </div>
-                <div className="col-4">
+                <div className="col-3">
                   <Card style={{ width: "18rem" }}>
                     <Card.Img variant="top" src={imgPadrao} className="p-2 card-foto"/>
                     <Card.Body>
@@ -173,7 +174,7 @@ const Info = () => {
                     <Card.Body>
                       <Card.Title>Angela Timotea</Card.Title>
                       <Card.Text>
-                        Professora: Arquitetura
+                        Professora: SISTEMAS OPERACIONAIS
                       </Card.Text>
                     </Card.Body>
                   </Card>
@@ -184,7 +185,7 @@ const Info = () => {
                     <Card.Body>
                       <Card.Title>Jaqueline Pinheiro</Card.Title>
                       <Card.Text>
-                        Professora: Estrutura de dados I
+                        Professora: ESTRUTURA DE DADOS   I
                       </Card.Text>
                     </Card.Body>
                   </Card>
