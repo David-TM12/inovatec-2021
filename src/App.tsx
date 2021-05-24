@@ -381,7 +381,7 @@ class App extends Component {
           <div className="row px-3">
 
             <div className="col-sm-6">
-              <h5 className="text-center text-secondary">% Ocupação dos leitos</h5>
+              <h5 className="text-center text-secondary">% Ocupação dos leitos de covid</h5>
               <BarChart 
                 hospital1={card1}
                 hospital2={card2}

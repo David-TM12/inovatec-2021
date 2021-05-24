@@ -4,28 +4,28 @@ const BarChart  = (props:any) =>{
 
     //objetos do hospitais
     const h1 = {
-        nome: props.hospital1.nomeCnes,
+        nome: "Delphina Aziz",
         txOcupacao: (props.hospital1.ocupSRAGUti / props.hospital1.ofertaSRAGUti).toFixed(2) || 0,
     }
 
     const h2 = {
-        nome: props.hospital2.nomeCnes,
+        nome: "28 de Agosto",
         txOcupacao: (props.hospital2.ocupSRAGUti / props.hospital2.ofertaSRAGUti).toFixed(2) || 0,
     }
     const h3 = {
-        nome: props.hospital3.nomeCnes,
+        nome: "João Lucio",
         txOcupacao: (props.hospital3.ocupSRAGUti / props.hospital3.ofertaSRAGUti).toFixed(2) || 0,
     }
     const h4 = {
-        nome: props.hospital4.nomeCnes,
+        nome: "Platão Araújo",
         txOcupacao: (props.hospital4.ocupSRAGUti / props.hospital4.ofertaSRAGUti).toFixed(2) || 0,
     }
     const h5 = {
-        nome: props.hospital5.nomeCnes,
+        nome: "Adriano Jorge",
         txOcupacao: (props.hospital5.ocupSRAGUti / props.hospital5.ofertaSRAGUti).toFixed(2) || 0, 
     }
     const h6 = {
-        nome: props.hospital6.nomeCnes,
+        nome: "Getulio Vargas",
         txOcupacao: (props.hospital6.ocupSRAGUti / props.hospital6.ofertaSRAGUti).toFixed(2) || 0,
     }
 
