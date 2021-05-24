@@ -3,7 +3,6 @@ import Cards from "components/Cards";
 import DataTable from "components/DataTable";
 import DonutChart from "components/DonutChat";
 import Footer from "components/Footer";
-import Mapas from "components/Mapa";
 import NavBar from "components/NavBar/index";
 import Info from "components/Info/index";
 import { Component } from "react";
@@ -427,25 +426,7 @@ class App extends Component {
             </div>
              
           </div>
-          {/* <div className="row px-3">
 
-            <div className="col-sm-6">
-              <h5 className="text-center text-secondary">Hospitais</h5>
-              <Mapas />
-            </div>
-
-            <div className="col-sm-6">
-              <h5 className="text-center text-secondary">Hospitais</h5>
-              <Mapas />
-            </div>
-
-          </div>
-
-          <div className="py-3">
-            <h2 className="text-primary">Todos hopitais de manaus</h2>
-          </div> */}
-
-          
         </div>
         <Footer />
       </>

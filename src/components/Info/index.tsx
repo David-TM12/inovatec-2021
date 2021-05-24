@@ -5,6 +5,7 @@ import imgFabricio from "assets/img/alunos/FabricioTavares.jpeg";
 import imgRafael from "assets/img/alunos/RafaelSouza.jpeg";
 import imgDavid from "assets/img/alunos/DavidMagalhaes1.jpeg";
 import imgEstefany from "assets/img/alunos/Estefany1.jpeg";
+import imgJesse from "assets/img/alunos/Jesse3.jpeg";
 
 const Info = () => {
   const [show, setShow] = useState(false);
@@ -96,7 +97,7 @@ const Info = () => {
 
                 <div className="col-3">
                   <Card style={{ width: "18rem" }}>
-                    <Card.Img variant="top" src={imgPadrao} className="p-2 card-foto"/>
+                    <Card.Img variant="top" src={imgJesse || imgPadrao} className="p-2 card-foto"/>
                     <Card.Body>
                       <Card.Title>JESSÉ DOS SANTOS FREITAS</Card.Title>
                       <Card.Text>

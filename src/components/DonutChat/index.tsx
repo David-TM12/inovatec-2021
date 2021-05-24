@@ -29,7 +29,7 @@ const DonutChart  = (props:any) =>{
         respiradores: props.hospital6.ofertaRespiradores || 0,
     }
 
-    const mockData = {
+    const Data = {
         series: [h1.respiradores, h2.respiradores, h3.respiradores, h4.respiradores, h5.respiradores, h6.respiradores],
         labels: ["Delphina Aziz", "28 de Agosto","João Lúcio", "Platão Araújo", "Adriano Jorge", "Getulio Vargas"]
     }
@@ -42,8 +42,8 @@ const DonutChart  = (props:any) =>{
 
     return (
         <Chart 
-            options = {{ ...options, labels: mockData.labels}}
-            series = {mockData.series}
+            options = {{ ...options, labels: Data.labels}}
+            series = {Data.series}
             type = "donut"
             height="240"
         />
